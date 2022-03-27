@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+<style>
+        *
+        {
+                background-color: black;
+                color: whitesmoke;
+        }
+        #firstNumber
+        {
+               border: 1px solid whitesmoke;
+        }
+        #secondNumber
+        {
+                border:1px solid whitesmoke;
+        }
+        #thirdNumber
+        {
+                border:1px solid whitesmoke;
+        }
+        #fourNumber
+        {
+                border:1px solid whitesmoke;
+        }
+        #fiveNumber
+        {
+                border:1px solid whitesmoke;
+        }
+        #result
+        {
+                border:1px solid whitesmoke;
+        }
+        #result1
+        {
+                border:1px solid whitesmoke;
+        }
+        #result2
+        {
+                border:1px solid whitesmoke;
+        }
+        #result3
+        {
+                border:1px solid whitesmoke;
+        }
+        
+
+</style>
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body>
+<form>
+Voltage : <input type="text" id="firstNumber" /><br>
+Current: <input type="text" id="secondNumber" /><br>
+Resistance: <input type="text" id="thirdNumber" /><br>
+Energy: <input type="text" id="fourNumber" /><br>
+Time: <input type="text" id="fiveNumber" /><br>
+
+<input type="button" onClick="multiplyBy()" Value="P=I*V" id="rr" />
+<input type="button" onClick="multiplyBy1()" Value="P=I*I*R" id="ri" />
+<input type="button" onClick="divideBy()" Value="P=E/t" id="ry"/>
+<input type="button" onClick="divideBy1()" Value="P=V*V*I" id="rw"/>
+
+
+</form>
+<p>The Power is : <br>
+<span id = "result"></span>
+</p>
+
+<p>The Power is : <br>
+<span id = "result1"></span>
+</p>
+
+<p>The Power is : <br>
+<span id = "result2"></span>
+</p>
+
+<p>The Power is : <br>
+        <span id = "result3"></span>
+        </p>
+
+
+
+</body>
+
+<script>
+        function multiplyBy()
+{
+        num1 = document.getElementById("secondNumber").value;
+        num2 = document.getElementById("firstNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function multiplyBy1()
+{
+        num3 = document.getElementById("secondNumber").value;
+        num4 = document.getElementById("thirdNumber").value;
+        document.getElementById("result1").innerHTML = (num3 * num3) * num4;
+}
+
+function divideBy() 
+{ 
+        num5 = document.getElementById("fourNumber").value;
+        num6 = document.getElementById("fiveNumber").value;
+document.getElementById("result2").innerHTML = num5 / num6;
+}
+
+function divideBy1() 
+{ 
+        num7 = document.getElementById("firstNumber").value;
+        num8 = document.getElementById("thirdNumber").value;
+document.getElementById("result3").innerHTML = (num7*num7) / num8;
+}
+</script>
+</html>

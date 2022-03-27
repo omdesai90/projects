@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<style>
+        *
+        {
+                background-color: black;
+                color: whitesmoke;
+        }
+        #ty
+        {
+                color: whitesmoke;
+        }
+        #firstNumber 
+        {
+                border:1px solid whitesmoke;
+        }
+        #secondNumber 
+        {
+                border:1px solid whitesmoke;
+        }
+        #thirdNumber 
+        {
+                border:1px solid whitesmoke;
+        }
+        #rr
+        {
+                color: whitesmoke;
+        }
+        #ri
+        {
+                color: whitesmoke;
+        }
+        #ry
+        {
+                color: whitesmoke;
+        }
+        #result
+        {
+                border:1px solid whitesmoke;
+        }
+        #result1
+        {
+                border:1px solid whitesmoke;
+        }
+        #result2
+        {
+                border:1px solid whitesmoke;
+        }
+</style>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<body id=ty>
+<form>
+Voltage : <input type="text" id="firstNumber" /><br>
+Current: <input type="text" id="secondNumber" /><br>
+Resistance: <input type="text" id="thirdNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Voltage" id="rr"/>
+<input type="button" onClick="divideBy()" Value="Current" id="ri"/>
+<input type="button" onClick="divideBy1()" Value="Resistance" id="ry"/>
+</form>
+<p>The Voltage is : <br>
+<span id = "result"></span>
+</p>
+
+<p>The Current is : <br>
+<span id = "result1"></span>
+</p>
+
+<p>The Resistance is : <br>
+<span id = "result2" ></span>
+</p>
+
+</body>
+
+<script>
+        function multiplyBy()
+{
+        num1 = document.getElementById("secondNumber").value;
+        num2 = document.getElementById("thirdNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num3 = document.getElementById("firstNumber").value;
+        num4 = document.getElementById("thirdNumber").value;
+document.getElementById("result1").innerHTML = num3 / num4;
+}
+
+function divideBy1() 
+{ 
+        num5 = document.getElementById("firstNumber").value;
+        num6 = document.getElementById("secondNumber").value;
+document.getElementById("result2").innerHTML = num5 / num6;
+}
+</script>
+</html>

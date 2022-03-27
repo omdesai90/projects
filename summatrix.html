@@ -1,0 +1,89 @@
+<html>
+<head><title>hy</title>
+   <meta charset="windows-1251">
+   <style>*{
+    background-color: black;
+    color: whitesmoke;
+    }
+    </style>x   
+<script>
+    //10.  A real square matrix of size n x n. Calculate the sum of the elements of the two main diagonals of the matrix.
+    var r,c,d1,d2; //r - rows, c - columns, d1 - first diagonal, d2 - second diagonal
+    d1 = 0;
+    d2 = 0;
+    r = prompt('Enter the number of rows in first matrix');
+    c = prompt('Enter the number of columns in first matrix');
+    var mat = [];
+        for (var i=0; i<r; i++){
+            mat[i] = [];
+            for (var j=0; j<c; j++){
+                mat[i][j]= prompt ('Enter a value for the cell ' + i + 'x' + j);
+            }
+        } 
+        
+var r2,c2,d12,d22; //r - rows, c - columns, d1 - first diagonal, d2 - second diagonal
+    d12 = 0;
+    d22 = 0;
+    r2 = prompt('Enter the number of rows in secound matrix');
+    c2 = prompt('Enter the number of columns in secound matrixs');
+    var mat2 = [];
+    for (var i=0; i<r2; i++){
+            mat2[i] = [];
+            for (var j=0; j<c2; j++){
+                mat2[i][j]= prompt ('Enter a value for the cell ' + i + 'x' + j);
+            }
+        } 
+
+        var sum = [];
+        for (var i=0; i<r2; i++){
+            sum[i] = [];
+            for (var j=0; j<c2; j++){
+                sum[i][j] = parseInt(mat[i][j]) + parseInt(mat2[i][j]);
+            }
+        } 
+
+        document.write( "Matrix - 1 ");
+        document.write("<br>");
+
+        for (var i=0; i<r; i++){
+            for (var j=0; j<c; j++){
+                document.write(mat[i][j] + " ");
+            }
+            document.write("<br>");
+        } 
+        document.write("<br>");
+        document.write( "Matrix - 2 ");
+        document.write("<br>");
+
+
+
+        for (var i=0; i<r2; i++){
+            for (var j=0; j<c2; j++){
+                document.write(mat2[i][j] + " ");
+            }
+            document.write("<br>");
+        } 
+        
+
+        document.write("<br>");
+        document.write( "Sum of matrix:-");
+        document.write("<br>");
+
+
+        
+        for (var i=0; i<r2; i++){
+            for (var j=0; j<c2; j++){
+                // mat2[i][j]= prompt ('Enter a value for the cell ' + i + 'x' + j);
+                document.write(sum[i][j] + " ");
+            }
+            document.write("<br>");
+
+        } 
+        
+    // document.write('Diagonal 1 = ' + d1 + "<br>" + 'Diagonal 2 = ' + d2 + "<br>");
+
+</script>
+</head>
+</body>
+</html>
+   
